@@ -1,0 +1,269 @@
+<html>
+    <head>
+        <link href="resources/style.css" rel="stylesheet">
+        <title>Joss's Cheat Sheet</title>
+    </head>
+
+    <body>
+        <h1>Cheat Sheet</h2>
+
+        <nav>
+            <a href="#html elements">HTML Elements</a>
+            <a href="#attributes">Attributes</a>
+            <a href="#css">CSS</a>
+            <a href="#bash">BASH</a>
+        </nav>
+
+    <!--HTML Elements Section-->
+        <table>
+            <thead>
+                <tr>
+                <th colspan="2" id="html elements">HTML Elements</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;head&gt;</td>
+                    <td>Gives the browser information about the page itself, does not appear in the text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;title&gt;</td>
+                    <td>Usually nested under the &lt;head&gt; element, it will title your document in the "site title".</td>
+                </tr>
+                <tr>
+                    <td>&lt;body&gt;</td>
+                    <td>Only content inside this element will be displayed on the screen.</td>
+                </tr>
+                <tr>
+                    <td>&lt;h1-h6&gt;</td>
+                    <td>Used for headings with h1 being the largest and h6 being the smallest.</td>
+                </tr>
+                <tr>
+                    <td>&lt;div&gt;</td>
+                    <td>Stands for (Division). It's a container that divides the page into sections, grouping elements together and are useful for applying custom styles to it specifically. *must be used sparingly*</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>"Anchor" will separate a part of the text that you can turn into a link by utilizing the href= attribute.</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>"Paragraph" contain a block of plain text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;span&gt;</td>
+                    <td>To be followed after &lt;p&gt; separates small pieces of text on the same line of other text.</td>
+                </tr>
+                <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>"Line break," *does not use a closing tag* and will manually break your sentence to the next line of the page. Can be used to backdoor paragraphs in one &lt;p&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>"Unordered list" will list items in order using bullet points.</td>
+                </tr>
+                <tr>
+                    <td>&lt;ol&gt;</td>
+                    <td>"Ordered list" will list items in order using numbers instead of bullet points.</td>
+                </tr>
+                <tr>
+                    <td>&lt;li&gt;</td>
+                    <td>"List item" to nested within &lt;ul&gt; or &lt;ol&gt; to create your list.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img/&gt;</td>
+                    <td>Is a self closing tag that will add an image, but must contain a source code within Ex. &lt;img src="image-location.jpg/&gt;.</td>
+                </tr>
+                <tr>
+                    <td>&lt;video&gt;</td>
+                    <td>A lot like &lt;img&gt; element but requires a closing tag, instead of alt= you can put it in between opening and closing tag.</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Creates a table but requires rows.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tr&gt;</td>
+                    <td>(Table row) to be nested within &lt;table&gt; to create rows.</td>
+                </tr>
+                <tr>
+                    <td>&lt;td&gt;</td>
+                    <td>(Table data) to be nested within &lt;tr&gt; to create the content within the rows, you can add mutliple &lt;tr&gt;'s to create additional columns.</td>
+                </tr>
+                <tr>
+                    <td>&lt;th&gt;</td>
+                    <td>(Table head) can be added to create a name for the row, or can name columns if formatted like a row but the first needs to be blank to create a blank corner cell *link with scope= "col" OR "row" to specify if you're naming a column or a row.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tbody&gt;</td>
+                    <td>Like &lt;body&gt; for html but specifies for table.</td>
+                </tr>
+                <tr>
+                    <td>&lt;thead&gt;</td>
+                    <td>Like &lt;head&gt; for html but creates the top row as a header.</td>
+                </tr>
+                <tr>
+                    <td>&lt;tfoot&gt;</td>
+                    <td>Specifies the end row of a table.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Attributes for HTML Section-->
+        <table>
+            <thead>
+                <tr>
+                <th colspan="2" id="attributes">Attributes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;id&gt;</td>
+                    <td>Ex. &lt;div id="intro"&gt; gives a specific name to an element.</td>
+                </tr>
+                <tr>
+                    <td>&lt;width&gt;</td>
+                    <td>Width="xxx"</td>
+                </tr>
+                <tr>
+                    <td>&lt;height&gt;</td>
+                    <td>Height="xxx"</td>
+                </tr>
+                <tr>
+                    <td>&lt;controls&gt;</td>
+                    <td>Will add specific controls to things like videos.</td>
+                </tr>
+                <tr>
+                    <td>&lt;src&gt;</td>
+                    <td>Or "source" will link your page to to another page or file, usually used for images or videos.</td>
+                </tr>
+                <tr>
+                    <td>&lt;href&gt;</td>
+                    <td>Hyperlink reference, like src it will link to another webpage.</td>
+                </tr>
+                <tr>
+                    <td>&lt;target&gt;</td>
+                    <td>select where a link will open, target="_blank" will open in a new window.</td>
+                </tr>
+                <tr>
+                    <td>&lt;#id&gt;</td>
+                    <td>Will link to an id in the same webpage Ex. href="#top".</td>
+                </tr>
+                <tr>
+                    <td>&lt;scope="row" OR "col"&gt;</td>
+                    <td>Specify if you're naming rows or columns.</td>
+                </tr>
+                <tr>
+                    <td>&lt;colspan="x"&gt;</td>
+                    <td>Will span a blank box across x number of column cells in tables.</td>
+                </tr>
+                <tr>
+                    <td>&lt;rowspan&gt;</td>
+                    <td>Same as above but for rows.</td>
+                </tr>
+                <tr>
+                    <td>&lt;em&gt;</td>
+                    <td>Emphasizes text (italic).</td>
+                </tr>
+                <tr>
+                    <td>&lt;strong&gt;</td>
+                    <td>Highlights important text (bold)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--CSS Section-->
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" id="css">CSS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">&lt;link href='style.css' rel='stylesheet'&gt;</td>
+                </tr>
+                <tr>
+                    <td>Colors</td>
+                    <td>Color: Blue OR Hex:#000000 OR Rgb(143, 69, 18) OR Hsl(hue,saturation, brightness) hsl(120, 60%, 0.1), using hsla(34, 100%, 50%, 0.1) will add alpha a.k.a. OPACITY the same goes for rgba as well, and even hexadecimal by adding 2 additional numbers at the end instead of the base 6.</td>
+                </tr>
+                <tr>
+                    <td>Font-family</td>
+                    <td>Changes the font of the selected element(multi words needs to be surrounded with ' ') *look for web safe fonts* fallback fonts can be chained with commas. Don't forget about Serif/Sans-serif</td>
+                </tr>
+                <tr>
+                    <td>Font-weight</td>
+                    <td>Bold, normal, lighter, bolder. You can also use numbers 400=Normal and 700=Bold</td>
+                </tr>
+                <tr>
+                    <td>Font-style</td>
+                    <td>Italic, normal.</td>
+                </tr>
+                <tr>
+                    <td>Text-transform</td>
+                    <td>Uppercase, lowercase.</td>
+                </tr>
+                <tr>
+                    <td>Letter/word spacing</td>
+                    <td>Determines how far apart each letter is in pixles.</td>
+                </tr>
+                <tr>
+                    <td>Line-height</td>
+                    <td>Sets the line height from the bottom of the line.</td>
+                </tr>
+                <tr>
+                    <td>Text-align</td>
+                    <td>Aligns text to its parent element (left, right etc.</td>
+                </tr>
+                <tr>
+                    <td>@font-face</td>
+                    <td>Will allow you to use downloaded fonts, you then have to use font-family and make a name in quotations, followed by src: url(fonts/name.woff2 or .woff or .ttf format) Woff2, woff, Truetype.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--BASH Section-->
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2" id="bash">BASH (Command Prompt)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>$</td>
+                    <td>Is the original shell basically stating it's ready for a command.</td>
+                </tr>
+                <tr>
+                    <td>ls</td>
+                    <td>(list) will list all docs under your directory.</td>
+                </tr>
+                <tr>
+                    <td>pwd</td>
+                    <td>(Print working directory) will show the exact path to the current working directory that you're in.</td>
+                </tr>
+                <tr>
+                    <td>cd</td>
+                    <td>(Change directory) will change your directory to the targeted location.</td>
+                </tr>
+                <tr>
+                    <td>../ or ../../</td>
+                    <td>Will show/change you to a previous or further directory, this chain will even work with specific directories (a/b).</td>
+                </tr>
+                <tr>
+                    <td>mkdir</td>
+                    <td>(make directory "xxx") will create a new directory with "xxx" name.</td>
+                </tr>
+                <tr>
+                    <td>touch</td>
+                    <td>will create a new file inside of a directory (keyboard.txt).</td>
+                </tr>
+                <tr>
+                    <td>clear</td>
+                    <td>Will clear your command feed but won't undo or delete your commands made.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

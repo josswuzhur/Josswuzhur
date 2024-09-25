@@ -1,0 +1,54 @@
+* {
+    font-family: "Verdana";
+    color:rgb(75, 55, 26);
+}
+table {
+    border-collapse: collapse;
+    margin: 100px auto;
+    width: 950px;
+}
+
+th, td {
+    border:  3px solid rgb(75, 55, 26);
+    padding: 7px;
+}
+
+th {
+    font-size: 25px;
+    background-color: rgb(115, 168, 113);
+}
+
+td {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color:rgb(75, 55, 26);
+    color:rgb(115, 168, 113);
+    height: 80px;
+}
+
+html {
+    background-color: rgb(237, 223, 204);
+}
+
+nav {
+    float: left;
+    display: inline;
+    width: 80px;
+    background-color:rgb(115, 168, 113);
+    margin: 0;
+    padding: 0;
+    -ms-transform: translateY(2400px);
+    transform: translateY(240px);
+    height: 130px;
+    text-align: left;
+    line-height: 20px;
+    position: fixed;
+}
+
+a:hover {
+    color:rgb(237, 223, 204);
+}
