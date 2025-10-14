@@ -1,17 +1,24 @@
-## Hi there 👋
-Hey all! I'm now beginning to learn code for the front end and back end!
+# Joss Lee 🚀
+Full Stack & Systems Engineer | Python | React | Node.js | SQL | Cloud-ready
 
-<!--
-**josswuzhur/Josswuzhur** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I’m passionate about building scalable software and optimizing real-world systems. Always eager to learn, improve, and tackle new challenges. I thrive on solving problems, exploring new technologies, and pushing projects to excel.
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Skills
+Python | JavaScript | React | Node.js | SQL | Appwrite | Automation systems | 3D modeling | Mechanical/electrical diagnostics | Cloud fundamentals
+
+---
+
+## Projects
+**Movie Rating App** – React + Appwrite, live on Hostinger  
+**Inventory Dashboard** – React + Node.js + PostgreSQL, deployed on Vercel  
+**Algorithm Visualizer** – Python-based learning tool  
+**3D-Printed Component Optimization** – Cost-saving parts for automated packaging systems, deployed nationally  
+
+---
+
+## Contact
+Portfolio: [josslee.com](https://josslee.com)  
+Email: joss.lee.2002@gmail.com  
+
